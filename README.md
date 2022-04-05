@@ -1,6 +1,11 @@
 # Rockets_map
 Mapping previous and upcoming launches based on the Data parsed from the API built by The Space Devs
 
+Built this small dashboard to discover the R programming language and Shiny framework.
+Main tasks were: parsing the API, processing the data into tidy formats, building the visualisations (plots and maps)
+then implementing these in a reactive Shiny app. Had memory issues with updating the "upcoming launches map" because InvalidateLater 
+method needs to be coupled with a "garbage collector" system so we don't "clear markers" every seconds to update the countdowns (thus causing flickers).
+
 First page is a map of all the previous launches in history reported in the dataset built thanks to the
 API from www.thespacedevs.com . Panel on the side lets the user change the year and explore the
 launches for each selection plus it displays statistics about the success rate and the number of launches
