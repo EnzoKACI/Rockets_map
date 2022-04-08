@@ -1,6 +1,11 @@
 # Rockets_map
 Mapping previous and upcoming launches based on the Data parsed from the API built by The Space Devs
 
+The app is deployed at: https://enzo-kaci.shinyapps.io/rockets_map/
+
+Warning: The deployed codebase is slightly different since using the "garbage system" mentioned below would still be too heavy for the memory allocated by shinyapps.io
+free hosting services.
+
 Built this small dashboard to discover the R programming language and Shiny framework.
 Main tasks were: parsing the API, processing the data into tidy formats, building the visualisations (plots and maps)
 then implementing these in a reactive Shiny app. Had memory issues with updating the "upcoming launches map" because InvalidateLater 
